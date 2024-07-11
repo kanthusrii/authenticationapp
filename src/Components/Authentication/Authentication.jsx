@@ -1,25 +1,25 @@
 import {useState} from "react";
 import '../Authentication/Authentication.css';
-import axios from "axios";
+//import axios from "axios";
 
 
 const Login = () => {
     const [username,setUserName]=useState("");
     const [password,setPassword]=useState("");
-    axios.defaults.headers.common['Access-Control-Allow-Origin'] = '*';
-    axios.defaults.headers.common['Access-Control-Allow-Headers'] = 'Origin, X-Requested-With, Content-Type, Accept';
+    // axios.defaults.headers.common['Access-Control-Allow-Origin'] = '*';
+    // axios.defaults.headers.common['Access-Control-Allow-Headers'] = 'Origin, X-Requested-With, Content-Type, Accept';
 
 
     const Login=async ()=>{
         debugger;
         try{
-            const response=await axios.post("http://localhost:24202/api/auth/login",
-                {
-                    UserName : username,
-                    Password : password
-                }
-            );
-            const token=response.data;
+            // const response=await axios.post("http://localhost:24202/api/auth/login",
+            //     {
+            //         UserName : username,
+            //         Password : password
+            //     }
+            // );
+            // const token=response.data;
         }catch(error){
             console.log(error)
         }
