@@ -1,0 +1,25 @@
+.login{
+    background-color: lightblue;    
+    width: 500px;
+    height: 500px; 
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+}
+input{
+    border-radius: 20px;
+    height: 25px;
+    margin: 10px    
+}
+button{
+    width: 100px;
+    height: 40px;
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+    margin-left: 100px;
+}
+button:hover{
+    background-color: lightgray;
+    color: black;
+}
